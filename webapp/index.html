@@ -6,53 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webapp Aalborg Kommune Park & Natur</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="/webapp/assets/script/script.js" defer></script>
+    <script src="assets/script/script.js" defer></script>
 </head>
 <body>
-    <header class="grid-header">
-        <nav>
-            <img class="logo" src="./assets/img/logoblaa.svg" alt="AalborgKommuneLogo">
+    <header>
+        <nav class="header">
+            <img class="logo" src="./assets/img/logoblaa.svg" alt="Aalborg Kommune Logo">
             <img class="filtrer" src="./assets/img/sliders-solid.svg" alt="Filtrer">
         </nav>
-
     </header>
 
     <main class="grid-container">
-        <section class="s1">
-            <h1>Egholm</h1>
-            <p>2,3 km - 8,8 km</p>
-            <button class="knap">LÆS MERE</button>
+        
+        <section>
+            <h1 class="">Vandreruter</h1>
+            <img class="aalborgkommune-kort" src="./assets/img/kort-aalborgkommune.PNG" alt="Aalborgkommune">
+        </section>
+      
+        <section class="s1 container">
+            <h2 class="centered">Egholm</h2>
+            <p class="bottom-right">2,3 km - 8,8 km</p>
+            <button id="KnapEgholm" class="knap bottom-center">Se ruten</button>
+            <section id="ModalEgholm" class="modal-Egholm">
+                <article class="Egholm">
+                    <span id="close" class="close">&times;</span>
+                    <img class="egholm-signatur" src="./assets/img/signaturforklaring-egholm.png" alt="kort over Egholm">
+                    
+                    <button class="accordion"><h3>Vandreruter</h3></button>
+                        <div class="indhold-acc">
+                            <p class="p-acc">hai farvel</p>
+                        </div>
+
+                    <button class="accordion"><h3>Nyttig information</h3></button>
+                        <div class="indhold-acc">
+                            <p class="p-acc">Konichiwa</p>
+                        </div>      
+                    
+                    <button class="accordion"><h3>Landskab- og planter</h3> </button>
+                        <div class="indhold-acc">
+                            <p class="p-acc">blomster</p>
+                        </div>
+
+                    <button class="accordion"><h3>Dyre- og fugleliv</h3></button>
+                        <div class="indhold-acc">
+                            <p class="p-acc">dog</p>
+                        </div>
+                </article> 
+            </section>
         </section>
 
-        <section class="s2">
-            <h1>Bjergbanestien</h1>
-            <p>14 km</p>
-            <button class="knap">LÆS MERE</button>
+        <section class="s2 container">
+            <h2 class="centered">Bjergbanestien</h2>
+            <p class="bottom-right">14 km</p>
+            <button class="knap bottom-center">Se ruten</button>
         </section>
 
-        <section class="s3">
-            <h1>Mulbjerge</h1>
-            <p>8,1 km</p>
-            <button class="knap">LÆS MERE</button>
+        <section class="s3 container">
+            <h2 class="centered">Mulbjerge</h2>
+            <p class="bottom-right">8,1 km</p>
+            <button class="knap bottom-center">Se ruten</button>
         </section>
         
-        <section class="s4">
-            <h1>Østerådalen Nord</h1>
-            <p>1,0 km - 4,1km</p>
-            <button class="knap">LÆS MERE</button>
+        <section class="s4 container">
+            <h2 class="centered">Østerådalen Nord</h2>
+            <p class="bottom-right">1,0 km - 4,1 km</p>
+            <button class="knap bottom-center">Se ruten</button>
         </section>
 
-
-        <section class="s5">
-            <h1>Østerådalen Syd</h1>
-            <p>5,0 km - 6,5 km</p>
-            <button class="knap">LÆS MERE</button>
+        <section class="s5 container">
+            <h2 class="centered">Østerådalen Syd</h2>
+            <p class="bottom-right">5,0 km - 6,5 km</p>
+            <button class="knap bottom-center">Se ruten</button>
         </section>
 
-        <section class="s6">
-            <h1>Poulstrup Sø & Dall Hede</h1>
-            <p>2,5 km - 6,3 km</p>
-            <button class="knap">LÆS MERE</button>
+        <section class="s6 container">
+            <h2 class="centered">Poulstrup Sø & Dall Hede</h2>
+            <p class="bottom-right">2,5 km - 6,3 km</p>
+            <button class="knap bottom-center">Se ruten</button>
         </section>
     </main>
 </body>
